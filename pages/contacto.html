@@ -2,62 +2,76 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EcoBook</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <title>Contacto</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 40px;
+        background-color: #f9f9f9;
+      }
+      h1 {
+        color: #2e7d32;
+      }
+      form {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        max-width: 500px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      textarea {
+        resize: vertical;
+        height: 100px;
+      }
+      button {
+        margin-top: 15px;
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      address {
+        margin-top: 30px;
+        font-style: normal;
+      }
+    </style>
   </head>
   <body>
-    <main>
-      <header>
-        <h1>EcoBook</h1>
-      </header>
-      <nav>
-        <a href="./pages/alojamientos.html">alojamientos</a>
-        <a href="./pages/contacto.html">contacto</a>
-        <a href="./pages/registro.html">registro</a>
-        <a href="../index.html">Inicio</a>
-      </nav>
-      <section>
-        <section>
-          <h2>Formulario</h2>
-          <form action="" method="post">
-            <label
-              >Correo<input
-                type="email"
-                name=""
-                placeholder="Ingrese su Correo"
-                id="email"
-            /></label>
-            <label
-              >Contraseña
-              <input
-                type="password"
-                placeholder="Ingrese password"
-                required
-                id="password"
-              />
-            </label>
-            <hr />
-            <label
-              >Nombre
-              <input type="text" placeholder="Ingrese su Nombre" id="text" />
-            </label>
-            <label
-              >Apellidos
-              <input type="text" placeholder="Ingrese su Apellidos" id="text" />
-            </label>
-            <hr />
-            <label for=""
-              >Mensaje
-              <textarea name="" id="text">Mensaje</textarea>
-            </label>
-            <hr />
+    <a href="../index.html">Inicio</a>
+    <h1>Contacto</h1>
 
-            <button type="submit">Iniciar sesion</button>
-          </form>
-        </section>
-      </section>
-      <script src="./js/script.js"></script>
-    </main>
+    <form action="#" method="post">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <address>
+      Puedes contactarnos en:
+      <a href="mailto:contacto@ecobook.com">contacto@ecobook.com</a><br />
+      Dirección: Calle Verde 123, EcoCiudad, Planeta Tierra
+    </address>
   </body>
 </html>

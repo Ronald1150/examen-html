@@ -2,139 +2,43 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Alojamientos</title>
+    <title>Listado de Alojamientos</title>
     <style>
       body {
-        font-family: sans-serif;
+        display: flex;
+        font-family: Arial, sans-serif;
         margin: 0;
-        padding: 0;
-      }
-
-      main,
-      aside,
-      footer {
         padding: 20px;
       }
-
+      main {
+        flex: 3;
+      }
+      aside {
+        flex: 1;
+        margin-left: 20px;
+        background-color: #f0f8f0;
+        padding: 15px;
+        border-radius: 8px;
+      }
       table {
         width: 100%;
         border-collapse: collapse;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
       }
-
       th,
       td {
-        border: 1px solid #aaa;
+        border: 1px solid #ccc;
         padding: 10px;
         text-align: left;
       }
-
       th {
-        background-color: #2e7d32;
-        color: white;
-      }
-
-      article {
-        margin-bottom: 30px;
-        border-bottom: 1px solid #ccc;
-        padding-bottom: 20px;
-      }
-
-      figure {
-        margin: 0;
-      }
-
-      figcaption {
-        background-color: #f0f0f0;
-        padding: 5px;
-        font-style: italic;
-      }
-
-      aside {
-        background-color: #e8f5e9;
-        border-top: 3px solid #66bb6a;
-      }
-
-      footer {
-        background-color: #f4f4f4;
-        border-top: 2px solid #ccc;
-        text-align: center;
-      }
-
-      footer a {
-        margin: 0 15px;
-        color: #2e7d32;
-        text-decoration: none;
-        font-weight: bold;
-      }
-
-      footer a:hover {
-        text-decoration: underline;
-      }
-
-      fieldset {
-        margin-top: 30px;
-        border: 2px solid #2e7d32;
-        padding: 15px;
-      }
-
-      legend {
-        font-weight: bold;
-        color: #2e7d32;
-      }
-
-      label {
-        display: block;
-        margin-top: 10px;
-      }
-
-      input,
-      select {
-        width: 100%;
-        padding: 5px;
-        margin-top: 5px;
-      }
-
-      input[type="submit"] {
-        margin-top: 15px;
-        background-color: #2e7d32;
-        color: white;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-      }
-
-      input[type="submit"]:hover {
-        background-color: #1b5e20;
+        background-color: #e0ffe0;
       }
     </style>
   </head>
   <body>
     <main>
-      <h2>Alojamientos disponibles</h2>
-
-      <article>
-        <figure>
-          <img src="eco-hotel.jpg" alt="EcoHotel Verde" width="300" />
-          <figcaption>EcoHotel Verde en Cartagena - $80 por noche</figcaption>
-        </figure>
-        <p>
-          Ubicado en Cartagena, este hotel ecológico ofrece una experiencia
-          única rodeada de naturaleza.
-        </p>
-      </article>
-
-      <article>
-        <figure>
-          <img src="refugio-natural.jpg" alt="Refugio Natural" width="300" />
-          <figcaption>Refugio Natural en Monteverde - $65 por noche</figcaption>
-        </figure>
-        <p>
-          Refugio Natural es un alojamiento sostenible en las montañas de
-          Monteverde, perfecto para desconectarte.
-        </p>
-      </article>
-
+      <h1>Listado de Alojamientos</h1>
       <table>
         <thead>
           <tr>
@@ -145,63 +49,32 @@
         </thead>
         <tbody>
           <tr>
-            <td>EcoHotel Verde</td>
-            <td>Cartagena</td>
-            <td>$80</td>
+            <td>EcoHotel La Montaña</td>
+            <td>Valle Verde</td>
+            <td>$85</td>
           </tr>
           <tr>
-            <td>Refugio Natural</td>
-            <td>Monteverde</td>
-            <td>$65</td>
+            <td>Refugio del Bosque</td>
+            <td>Sierra Azul</td>
+            <td>$70</td>
           </tr>
           <tr>
-            <td>Cabaña Solar</td>
-            <td>Bariloche</td>
+            <td>Casa del Río</td>
+            <td>Puerto Claro</td>
             <td>$90</td>
           </tr>
         </tbody>
       </table>
-
-      <!-- Formulario -->
-      <form action="registro.html" method="post">
-        <fieldset>
-          <legend>Formulario de Registro</legend>
-
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" required />
-
-          <label for="correo">Correo:</label>
-          <input type="email" id="correo" name="correo" required />
-
-          <label for="pais">País:</label>
-          <select id="pais" name="pais" required>
-            <option value="">Seleccione</option>
-            <option value="co">Colombia</option>
-            <option value="mx">México</option>
-            <option value="ar">Argentina</option>
-          </select>
-
-          <input type="submit" value="Registrarse" />
-        </fieldset>
-      </form>
     </main>
 
     <aside>
-      <h3>Tips eco-friendly</h3>
+      <h2>Tips eco-friendly</h2>
       <ul>
-        <li>Lleva tu botella reutilizable</li>
-        <li>Usa transporte público o bicicleta</li>
-        <li>Apaga las luces al salir</li>
-        <li>No malgastes el agua</li>
-        <li>Apoya negocios locales</li>
+        <li>Usa botellas reutilizables.</li>
+        <li>Apaga luces y aire acondicionado cuando salgas.</li>
+        <li>Apoya alojamientos que reciclen.</li>
+        <li>Evita el uso excesivo de toallas y sábanas.</li>
       </ul>
     </aside>
-
-    <footer>
-      <nav>
-        <a href="contacto.html">Contacto</a> |
-        <a href="registro.html">Registro</a>
-      </nav>
-    </footer>
   </body>
 </html>
