@@ -34,19 +34,25 @@
         color: white;
       }
 
-      aside {
-        background-color: #e8f5e9;
-        border-top: 3px solid #66bb6a;
+      article {
+        margin-bottom: 30px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 20px;
       }
 
       figure {
-        margin: 20px 0;
+        margin: 0;
       }
 
       figcaption {
         background-color: #f0f0f0;
         padding: 5px;
         font-style: italic;
+      }
+
+      aside {
+        background-color: #e8f5e9;
+        border-top: 3px solid #66bb6a;
       }
 
       footer {
@@ -81,11 +87,54 @@
         display: block;
         margin-top: 10px;
       }
+
+      input,
+      select {
+        width: 100%;
+        padding: 5px;
+        margin-top: 5px;
+      }
+
+      input[type="submit"] {
+        margin-top: 15px;
+        background-color: #2e7d32;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #1b5e20;
+      }
     </style>
   </head>
   <body>
     <main>
       <h2>Alojamientos disponibles</h2>
+
+      <article>
+        <figure>
+          <img src="eco-hotel.jpg" alt="EcoHotel Verde" width="300" />
+          <figcaption>EcoHotel Verde en Cartagena - $80 por noche</figcaption>
+        </figure>
+        <p>
+          Ubicado en Cartagena, este hotel ecológico ofrece una experiencia
+          única rodeada de naturaleza.
+        </p>
+      </article>
+
+      <article>
+        <figure>
+          <img src="refugio-natural.jpg" alt="Refugio Natural" width="300" />
+          <figcaption>Refugio Natural en Monteverde - $65 por noche</figcaption>
+        </figure>
+        <p>
+          Refugio Natural es un alojamiento sostenible en las montañas de
+          Monteverde, perfecto para desconectarte.
+        </p>
+      </article>
+
       <table>
         <thead>
           <tr>
@@ -113,22 +162,7 @@
         </tbody>
       </table>
 
-      <!-- FIGURE para alojamientos -->
-      <figure>
-        <img src="eco-hotel.jpg" alt="EcoHotel Verde" width="300" />
-        <figcaption>
-          EcoHotel Verde: rodeado de naturaleza en Cartagena.
-        </figcaption>
-      </figure>
-
-      <figure>
-        <img src="refugio-natural.jpg" alt="Refugio Natural" width="300" />
-        <figcaption>
-          Refugio Natural: ecológico en la montaña de Monteverde.
-        </figcaption>
-      </figure>
-
-      <!-- FORMULARIO -->
+      <!-- Formulario -->
       <form action="registro.html" method="post">
         <fieldset>
           <legend>Formulario de Registro</legend>
@@ -147,7 +181,6 @@
             <option value="ar">Argentina</option>
           </select>
 
-          <br /><br />
           <input type="submit" value="Registrarse" />
         </fieldset>
       </form>
@@ -165,10 +198,10 @@
     </aside>
 
     <footer>
-      <p>
+      <nav>
         <a href="contacto.html">Contacto</a> |
         <a href="registro.html">Registro</a>
-      </p>
+      </nav>
     </footer>
   </body>
 </html>
