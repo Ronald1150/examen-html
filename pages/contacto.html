@@ -7,30 +7,57 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <h1>EcoBook</h1>
-    </header>
-    <nav>
-      <a href="./pages/alojamientos.html">alojamientos</a>
-      <a href="./pages/contacto.html">contacto</a>
-      <a href="./pages/registro.html">registro</a>
-      <a href="../index.html">Inicio</a>
-    </nav>
-    <section>
+    <main>
+      <header>
+        <h1>EcoBook</h1>
+      </header>
+      <nav>
+        <a href="./pages/alojamientos.html">alojamientos</a>
+        <a href="./pages/contacto.html">contacto</a>
+        <a href="./pages/registro.html">registro</a>
+        <a href="../index.html">Inicio</a>
+      </nav>
       <section>
-        <h2>Formulario login</h2>
-        <form action="" method="post">
-          <input type="email" placeholder="Ingrese email" required id="email" />
-          <input
-            type="password"
-            placeholder="Ingrese password"
-            required
-            id="password"
-          />
-          <button type="submit">Iniciar sesion</button>
-        </form>
+        <section>
+          <h2>Formulario</h2>
+          <form action="" method="post">
+            <label
+              >Correo<input
+                type="email"
+                name=""
+                placeholder="Ingrese su Correo"
+                id="email"
+            /></label>
+            <label
+              >Contraseña
+              <input
+                type="password"
+                placeholder="Ingrese password"
+                required
+                id="password"
+              />
+            </label>
+            <hr />
+            <label
+              >Nombre
+              <input type="text" placeholder="Ingrese su Nombre" id="text" />
+            </label>
+            <label
+              >Apellidos
+              <input type="text" placeholder="Ingrese su Apellidos" id="text" />
+            </label>
+            <hr />
+            <label for=""
+              >Mensaje
+              <textarea name="" id="text">Mensaje</textarea>
+            </label>
+            <hr />
+
+            <button type="submit">Iniciar sesion</button>
+          </form>
+        </section>
       </section>
-    </section>
-    <script src="./js/script.js"></script>
+      <script src="./js/script.js"></script>
+    </main>
   </body>
 </html>
